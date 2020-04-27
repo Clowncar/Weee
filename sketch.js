@@ -25,6 +25,7 @@ function draw() {
   	noStroke();
   	ellipse(mouseX, mouseY, 90, 60);
 	
+	//the code below was copied and from an example (Create Graphics) on p5.js. I modified the color and shape and ditched the rectangle
 	pg.background(51);
   	pg.noFill();
   	pg.stroke(255);
@@ -49,7 +50,7 @@ function draw() {
 
 
 }
-
+//This is the function that moved the triangle across the screen when the mouse is dragged
 function mouseDragged (){
 	tilt = tilt + 5;
 	if (tilt >2000) {
